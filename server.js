@@ -29,7 +29,7 @@ marked.setOptions({
 });
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(cors());
@@ -205,4 +205,4 @@ async function generateAIResponse(persona, message) {
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
-}); 
+});
